@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>db-first</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Intero</th>
+            <th>mediumint</th>
+            <th>autoincrement</th>
+        </tr>
+        <tr>
+            <td>marca</td>
+            <td>stringa</td>
+            <td>VARCHAR(12)</td>
+            <td>NOTNULL</td>
+        </tr>
+        <tr>
+            <td>modello</td>
+            <td>stringa</td>
+            <td>VARCHAR(25)</td>
+            <td>NOTNULL UNIQUE</td>
+        </tr>
+        <tr>
+            <td>anno di produzione</td>
+            <td>data</td>
+            <td>YEAR</td>
+            <td>NOTNULL</td>
+        </tr>
+        <tr>
+            <td>prezzo</td>
+            <td>numero decimale</td>
+            <td>FLOAT(10, 2)</td>
+            <td>NOTNULL</td>
+        </tr>
+        <tr>
+            <td>abitabilità</td>
+            <td>intero</td>
+            <td>TINYINT</td>
+            <td>NOTNULL</td>
+        </tr>
+        <tr>
+            <td>stile</td>
+            <td>stringa</td>
+            <td>TEXT</td>
+            <td>NOTNULL</td>
+        </tr>
+        <tr>
+            <td>telaio</td>
+            <td>stringa</td>
+            <td>VARCHAR(20)</td>
+            <td>NOTNULL</td>
+        </tr>
+        <tr>
+            <td>motore</td>
+            <td>stringa</td>
+            <td>VARCHAR(20)</td>
+            <td>NOTNULL</td>
+        </tr>
+        <tr>
+            <td>sospensioni</td>
+            <td>stringa</td>
+            <td>VARCHAR(25)</td>
+            <td>NOTNULL</td>
+        </tr>
+        <tr>
+            <td>impianto frenante</td>
+            <td>stringa</td>
+            <td>VARCHAR(3)</td>
+            <td>NOTNULL</td>
+        </tr>
+        <tr>
+            <td>impianto d'accensione</td>
+            <td>stringa</td>
+            <td>VARCHAR(25)</td>
+            <td>NOTNULL</td>
+        </tr>
+        <tr>
+            <td>sistema di raffreddamento</td>
+            <td>string</td>
+            <td>VARCHAR(15)</td>
+            <td>NOTNULL</td>
+        </tr>
+    </table> 
+</body>
+</html>
