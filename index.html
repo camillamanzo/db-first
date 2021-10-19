@@ -7,17 +7,20 @@
     <title>db-first</title>
 </head>
 <body>
+    <header>
+        <h3>Tabella dati macchine usate</h3>
+    </header>
     <table>
         <tr>
-            <th>ID</th>
-            <th>Intero</th>
-            <th>mediumint</th>
-            <th>autoincrement</th>
+            <td>ID</td>
+            <td>Intero</td>
+            <td>mediumint</td>
+            <td>autoincrement</td>
         </tr>
         <tr>
             <td>marca</td>
             <td>stringa</td>
-            <td>VARCHAR(12)</td>
+            <td>VARCHAR(30)</td>
             <td>NOTNULL</td>
         </tr>
         <tr>
@@ -27,9 +30,15 @@
             <td>NOTNULL UNIQUE</td>
         </tr>
         <tr>
-            <td>anno di produzione</td>
+            <td>anno_produzione</td>
             <td>data</td>
             <td>YEAR</td>
+            <td>NOTNULL</td>
+        </tr>
+        <tr>
+            <td>km_fatti</td>
+            <td>intero</td>
+            <td>MEDIUMINT</td>
             <td>NOTNULL</td>
         </tr>
         <tr>
@@ -69,20 +78,20 @@
             <td>NOTNULL</td>
         </tr>
         <tr>
-            <td>impianto frenante</td>
+            <td>impianto_frenante</td>
             <td>stringa</td>
-            <td>VARCHAR(3)</td>
+            <td>VARCHAR(30)</td>
             <td>NOTNULL</td>
         </tr>
         <tr>
-            <td>impianto d'accensione</td>
+            <td>impianto_accensione</td>
             <td>stringa</td>
             <td>VARCHAR(25)</td>
             <td>NOTNULL</td>
         </tr>
         <tr>
-            <td>sistema di raffreddamento</td>
-            <td>string</td>
+            <td>sistema_raffreddamento</td>
+            <td>stringa</td>
             <td>VARCHAR(15)</td>
             <td>NOTNULL</td>
         </tr>
